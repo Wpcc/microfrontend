@@ -1,0 +1,907 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`sendLayoutHTTPResponse redirects correctly serializes a layout definition that includes redirects 1`] = `
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0"
+    >
+    <title>
+      Document
+    </title>
+  </head>
+  <body>
+    <script>
+      window.singleSpaLayoutData = {"props":{}}
+    </script>
+    <single-spa-router base="/custom">
+      <redirect from="/"
+                to="login"
+      >
+      </redirect>
+      <application name="nav">
+      </application>
+      <route path="clients">
+        <application name="clients">
+        </application>
+      </route>
+      <route path="settings">
+        <redirect from="/old-settings"
+                  to="settings"
+        >
+        </redirect>
+        <application name="settings">
+        </application>
+      </route>
+    </single-spa-router>
+  </body>
+</html>
+`;
+
+exports[`sendLayoutHTTPResponse response body allows for empty content strings to be returned from renderApplication with assets 1`] = `
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0"
+    >
+    <title>
+      Document
+    </title>
+    <style id="jss-server-side">
+      .button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+          }
+    </style>
+  </head>
+  <body>
+    <div id="single-spa-application:header">
+    </div>
+    <div class="main-content">
+      <button>
+        Top level content
+      </button>
+      <div id="single-spa-application:app1">
+      </div>
+      Some raw text
+    </div>
+    <span>
+      <footer>
+        <a href="/about">
+          About
+        </a>
+      </footer>
+    </span>
+    <script>
+      window.singleSpaLayoutData = {"props":{}}
+    </script>
+    <single-spa-router mode="history"
+                       base="/"
+    >
+      <application name="header">
+      </application>
+      <div class="main-content">
+        <route path="app1">
+          <button>
+            Top level content
+          </button>
+          <application name="app1">
+          </application>
+          Some raw text
+        </route>
+      </div>
+      <span>
+        <footer>
+          <a href="/about">
+            About
+          </a>
+        </footer>
+      </span>
+    </single-spa-router>
+  </body>
+</html>
+`;
+
+exports[`sendLayoutHTTPResponse response body allows for promises that resolve with streams to be returned from renderApplication 1`] = `
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0"
+    >
+    <title>
+      Document
+    </title>
+  </head>
+  <body>
+    <div id="single-spa-application:header">
+      <button>
+        App header from stream
+      </button>
+    </div>
+    <div class="main-content">
+      <button>
+        Top level content
+      </button>
+      <div id="single-spa-application:app1">
+        <button>
+          App app1 from stream
+        </button>
+      </div>
+      Some raw text
+    </div>
+    <span>
+      <footer>
+        <a href="/about">
+          About
+        </a>
+      </footer>
+    </span>
+    <script>
+      window.singleSpaLayoutData = {"props":{}}
+    </script>
+    <single-spa-router mode="history"
+                       base="/"
+    >
+      <application name="header">
+      </application>
+      <div class="main-content">
+        <route path="app1">
+          <button>
+            Top level content
+          </button>
+          <application name="app1">
+          </application>
+          Some raw text
+        </route>
+      </div>
+      <span>
+        <footer>
+          <a href="/about">
+            About
+          </a>
+        </footer>
+      </span>
+    </single-spa-router>
+  </body>
+</html>
+`;
+
+exports[`sendLayoutHTTPResponse response body allows for promises to be returned from renderApplication 1`] = `
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0"
+    >
+    <title>
+      Document
+    </title>
+  </head>
+  <body>
+    <div id="single-spa-application:header">
+      <button>
+        App header from promise
+      </button>
+    </div>
+    <div class="main-content">
+      <button>
+        Top level content
+      </button>
+      <div id="single-spa-application:app1">
+        <button>
+          App app1 from promise
+        </button>
+      </div>
+      Some raw text
+    </div>
+    <span>
+      <footer>
+        <a href="/about">
+          About
+        </a>
+      </footer>
+    </span>
+    <script>
+      window.singleSpaLayoutData = {"props":{}}
+    </script>
+    <single-spa-router mode="history"
+                       base="/"
+    >
+      <application name="header">
+      </application>
+      <div class="main-content">
+        <route path="app1">
+          <button>
+            Top level content
+          </button>
+          <application name="app1">
+          </application>
+          Some raw text
+        </route>
+      </div>
+      <span>
+        <footer>
+          <a href="/about">
+            About
+          </a>
+        </footer>
+      </span>
+    </single-spa-router>
+  </body>
+</html>
+`;
+
+exports[`sendLayoutHTTPResponse response body allows for strings to be returned from renderApplication 1`] = `
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0"
+    >
+    <title>
+      Document
+    </title>
+  </head>
+  <body>
+    <div id="single-spa-application:header">
+      <button>
+        App header
+      </button>
+    </div>
+    <div class="main-content">
+      <button>
+        Top level content
+      </button>
+      <div id="single-spa-application:app1">
+        <button>
+          App app1
+        </button>
+      </div>
+      Some raw text
+    </div>
+    <span>
+      <footer>
+        <a href="/about">
+          About
+        </a>
+      </footer>
+    </span>
+    <script>
+      window.singleSpaLayoutData = {"props":{}}
+    </script>
+    <single-spa-router mode="history"
+                       base="/"
+    >
+      <application name="header">
+      </application>
+      <div class="main-content">
+        <route path="app1">
+          <button>
+            Top level content
+          </button>
+          <application name="app1">
+          </application>
+          Some raw text
+        </route>
+      </div>
+      <span>
+        <footer>
+          <a href="/about">
+            About
+          </a>
+        </footer>
+      </span>
+    </single-spa-router>
+  </body>
+</html>
+`;
+
+exports[`sendLayoutHTTPResponse response body allows for strings to be returned from renderApplication with assets 1`] = `
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0"
+    >
+    <title>
+      Document
+    </title>
+    <style id="jss-server-side">
+      .button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+          }
+    </style>
+  </head>
+  <body>
+    <div id="single-spa-application:header">
+      <button>
+        App header
+      </button>
+    </div>
+    <div class="main-content">
+      <button>
+        Top level content
+      </button>
+      <div id="single-spa-application:app1">
+        <button>
+          App app1
+        </button>
+      </div>
+      Some raw text
+    </div>
+    <span>
+      <footer>
+        <a href="/about">
+          About
+        </a>
+      </footer>
+    </span>
+    <script>
+      window.singleSpaLayoutData = {"props":{}}
+    </script>
+    <single-spa-router mode="history"
+                       base="/"
+    >
+      <application name="header">
+      </application>
+      <div class="main-content">
+        <route path="app1">
+          <button>
+            Top level content
+          </button>
+          <application name="app1">
+          </application>
+          Some raw text
+        </route>
+      </div>
+      <span>
+        <footer>
+          <a href="/about">
+            About
+          </a>
+        </footer>
+      </span>
+    </single-spa-router>
+  </body>
+</html>
+`;
+
+exports[`sendLayoutHTTPResponse response body dom-elements.html fixture renders the app1 route correctly 1`] = `
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0"
+    >
+    <title>
+      Document
+    </title>
+  </head>
+  <body>
+    <div id="single-spa-application:header">
+      <button>
+        App header
+      </button>
+    </div>
+    <div class="main-content">
+      <button>
+        Top level content
+      </button>
+      <div id="single-spa-application:app1">
+        <button>
+          App app1
+        </button>
+      </div>
+      Some raw text
+    </div>
+    <span>
+      <footer>
+        <a href="/about">
+          About
+        </a>
+      </footer>
+    </span>
+    <script>
+      window.singleSpaLayoutData = {"props":{}}
+    </script>
+    <single-spa-router mode="history"
+                       base="/"
+    >
+      <application name="header">
+      </application>
+      <div class="main-content">
+        <route path="app1">
+          <button>
+            Top level content
+          </button>
+          <application name="app1">
+          </application>
+          Some raw text
+        </route>
+      </div>
+      <span>
+        <footer>
+          <a href="/about">
+            About
+          </a>
+        </footer>
+      </span>
+    </single-spa-router>
+  </body>
+</html>
+`;
+
+exports[`sendLayoutHTTPResponse response body dom-elements.html fixture supports nonce attributes 1`] = `
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0"
+    >
+    <title>
+      Document
+    </title>
+  </head>
+  <body>
+    <div id="single-spa-application:header">
+      <button>
+        App header
+      </button>
+    </div>
+    <div class="main-content">
+      <button>
+        Top level content
+      </button>
+      <div id="single-spa-application:app1">
+        <button>
+          App app1
+        </button>
+      </div>
+      Some raw text
+    </div>
+    <span>
+      <footer>
+        <a href="/about">
+          About
+        </a>
+      </footer>
+    </span>
+    <script nonce="sample-nonce">
+      window.singleSpaLayoutData = {"props":{}}
+    </script>
+    <single-spa-router mode="history"
+                       base="/"
+    >
+      <application name="header">
+      </application>
+      <div class="main-content">
+        <route path="app1">
+          <button>
+            Top level content
+          </button>
+          <application name="app1">
+          </application>
+          Some raw text
+        </route>
+      </div>
+      <span>
+        <footer>
+          <a href="/about">
+            About
+          </a>
+        </footer>
+      </span>
+    </single-spa-router>
+  </body>
+</html>
+`;
+
+exports[`sendLayoutHTTPResponse response body fragments.html fixture renders fragments correctly 1`] = `
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0"
+    >
+    <title>
+      Document
+    </title>
+  </head>
+  <body>
+    <script>
+      window.singleSpaLayoutData = {"props":{}}
+    </script>
+    <single-spa-router mode="history"
+                       base="/"
+    >
+    </single-spa-router>
+    <script type="systemjs-importmap">
+      {
+                    "imports": {}
+                  }
+    </script>
+  </body>
+</html>
+`;
+
+exports[`sendLayoutHTTPResponse response body multiple-fragments.html fixture allows renderFragment to return a string 1`] = `
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0"
+    >
+    <title>
+      Document
+    </title>
+  </head>
+  <body>
+    <script>
+      window.singleSpaLayoutData = {"props":{}}
+    </script>
+    <single-spa-router mode="history"
+                       base="/"
+    >
+    </single-spa-router>
+    <script type="systemjs-importmap">
+      {
+                "imports": {}
+              }
+    </script>
+  </body>
+</html>
+`;
+
+exports[`sendLayoutHTTPResponse response body multiple-fragments.html fixture doesn't wait for the first fragment stream to finish before starting to read the second fragment 1`] = `
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>
+      Document
+    </title>
+    <script type="systemjs-importmap">
+      {
+                  "imports": {}
+                }
+    </script>
+  </head>
+  <body>
+    <script>
+      window.singleSpaLayoutData = {"props":{}}
+    </script>
+    <single-spa-router mode="history"
+                       base="/"
+    >
+    </single-spa-router>
+  </body>
+</html>
+`;
+
+exports[`sendLayoutHTTPResponse response body multiple-fragments.html fixture preserves correct order of bytes when both fragments are slow 1`] = `
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>
+      Document
+    </title>
+    <script type="systemjs-importmap">
+      {
+                    "imports": {}
+                  }
+    </script>
+  </head>
+  <body>
+    <script>
+      window.singleSpaLayoutData = {"props":{}}
+    </script>
+    <single-spa-router mode="history"
+                       base="/"
+    >
+    </single-spa-router>
+  </body>
+</html>
+`;
+
+exports[`sendLayoutHTTPResponse response body multiple-fragments.html fixture preserves correct order of bytes when fragments are synchronous 1`] = `
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>
+      Document
+    </title>
+    <script type="systemjs-importmap">
+      {
+                  "imports": {}
+                }
+    </script>
+  </head>
+  <body>
+    <script>
+      window.singleSpaLayoutData = {"props":{}}
+    </script>
+    <single-spa-router mode="history"
+                       base="/"
+    >
+    </single-spa-router>
+  </body>
+</html>
+`;
+
+exports[`sendLayoutHTTPResponse response body multiple-fragments.html fixture preserves correct order of bytes when head-metadata is slow 1`] = `
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>
+      Document
+    </title>
+    <script type="systemjs-importmap">
+      {
+                  "imports": {}
+                }
+    </script>
+  </head>
+  <body>
+    <script>
+      window.singleSpaLayoutData = {"props":{}}
+    </script>
+    <single-spa-router mode="history"
+                       base="/"
+    >
+    </single-spa-router>
+  </body>
+</html>
+`;
+
+exports[`sendLayoutHTTPResponse response body multiple-fragments.html fixture preserves correct order of bytes when import map is slow 1`] = `
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>
+      Document
+    </title>
+    <script type="systemjs-importmap">
+      {
+                    "imports": {}
+                  }
+    </script>
+  </head>
+  <body>
+    <script>
+      window.singleSpaLayoutData = {"props":{}}
+    </script>
+    <single-spa-router mode="history"
+                       base="/"
+    >
+    </single-spa-router>
+  </body>
+</html>
+`;
+
+exports[`sendLayoutHTTPResponse response body renders an empty string when renderApplication throws an error 1`] = `
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0"
+    >
+    <title>
+      Document
+    </title>
+  </head>
+  <body>
+    <div id="single-spa-application:header">
+    </div>
+    <div class="main-content">
+      <button>
+        Top level content
+      </button>
+      <div id="single-spa-application:app1">
+      </div>
+      Some raw text
+    </div>
+    <span>
+      <footer>
+        <a href="/about">
+          About
+        </a>
+      </footer>
+    </span>
+    <script>
+      window.singleSpaLayoutData = {"props":{}}
+    </script>
+    <single-spa-router mode="history"
+                       base="/"
+    >
+      <application name="header">
+      </application>
+      <div class="main-content">
+        <route path="app1">
+          <button>
+            Top level content
+          </button>
+          <application name="app1">
+          </application>
+          Some raw text
+        </route>
+      </div>
+      <span>
+        <footer>
+          <a href="/about">
+            About
+          </a>
+        </footer>
+      </span>
+    </single-spa-router>
+  </body>
+</html>
+`;
+
+exports[`sendLayoutHTTPResponse response body renders an empty string when returned promise from renderApplication rejects 1`] = `
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0"
+    >
+    <title>
+      Document
+    </title>
+  </head>
+  <body>
+    <div id="single-spa-application:header">
+    </div>
+    <div class="main-content">
+      <button>
+        Top level content
+      </button>
+      <div id="single-spa-application:app1">
+      </div>
+      Some raw text
+    </div>
+    <span>
+      <footer>
+        <a href="/about">
+          About
+        </a>
+      </footer>
+    </span>
+    <script>
+      window.singleSpaLayoutData = {"props":{}}
+    </script>
+    <single-spa-router mode="history"
+                       base="/"
+    >
+      <application name="header">
+      </application>
+      <div class="main-content">
+        <route path="app1">
+          <button>
+            Top level content
+          </button>
+          <application name="app1">
+          </application>
+          Some raw text
+        </route>
+      </div>
+      <span>
+        <footer>
+          <a href="/about">
+            About
+          </a>
+        </footer>
+      </span>
+    </single-spa-router>
+  </body>
+</html>
+`;
+
+exports[`sendLayoutHTTPResponse response body renders assets and content in correct order 1`] = `
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0"
+    >
+    <title>
+      Document
+    </title>
+    <style id="jss-server-side">
+      .button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+          }
+    </style>
+  </head>
+  <body>
+    <div id="single-spa-application:header">
+      <button>
+        App header
+      </button>
+    </div>
+    <div class="main-content">
+      <button>
+        Top level content
+      </button>
+      <div id="single-spa-application:app1">
+        <button>
+          App app1
+        </button>
+      </div>
+      Some raw text
+    </div>
+    <span>
+      <footer>
+        <a href="/about">
+          About
+        </a>
+      </footer>
+    </span>
+    <script>
+      window.singleSpaLayoutData = {"props":{}}
+    </script>
+    <single-spa-router mode="history"
+                       base="/"
+    >
+      <application name="header">
+      </application>
+      <div class="main-content">
+        <route path="app1">
+          <button>
+            Top level content
+          </button>
+          <application name="app1">
+          </application>
+          Some raw text
+        </route>
+      </div>
+      <span>
+        <footer>
+          <a href="/about">
+            About
+          </a>
+        </footer>
+      </span>
+    </single-spa-router>
+  </body>
+</html>
+`;
