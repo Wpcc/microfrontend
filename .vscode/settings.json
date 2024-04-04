@@ -1,0 +1,9 @@
+{
+  "prettier.semi": false,
+  "prettier.singleQuote": true,
+  "prettier.useEditorConfig": false,
+  "prettier.trailingComma": "none",
+  "eslint.codeActionsOnSave.rules": null,
+  "javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": true,
+  "editor.codeActionsOnSave": {}
+}
