@@ -1,10 +1,14 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/app">About</router-link>
+      <router-link to="/app1">app1</router-link> |
+      <router-link to="/app2">app2</router-link> |
+      <router-link to="/app3">app3</router-link>
     </div>
-    <router-view />
+    <!-- 子应用容器 -->
+    <div id="microApp">
+      <router-view />
+    </div>
   </div>
 </template>
 

@@ -1,17 +1,15 @@
 {
-  "name": "@my-vue/my-dir",
+  "name": "my-root3",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "serve:standalone": "vue-cli-service serve --mode standalone"
+    "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "core-js": "^3.6.4",
     "single-spa": "^6.0.1",
-    "single-spa-vue": "^2.1.0",
     "vue": "^2.6.11",
     "vue-router": "^3.1.6"
   },
@@ -28,7 +26,6 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.0",
     "eslint-plugin-vue": "^6.2.2",
-    "vue-cli-plugin-single-spa": "~3.3.0",
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {
