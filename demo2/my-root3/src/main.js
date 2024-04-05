@@ -37,7 +37,7 @@ const apps = [
     // 子应用名称
     name: 'app1',
     // 子应用加载函数，是一个promise
-    app: loadApp('http://localhost:8081', 'app1'),
+    app: loadApp('http://localhost:8080', 'app1'),
     // 当路由满足条件时（返回true），激活（挂载）子应用
     activeWhen: (location) => location.pathname.startsWith('/app1'),
     // 传递给子应用的对象
